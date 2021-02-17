@@ -11,10 +11,11 @@ class PageController extends Controller
     }
 
     public function about() {
-        return 'NIM : 1941720036, NAMA : PUTRI NURIFA FIRDAUSIA';
+        echo "NIM : 1941720036";
+        echo "<br> NAMA : PUTRI NURIFA FIRDAUSIA";
     }
 
-    public function articles($id) {
-        return '/Halaman Artikel Dengan Id /{$id}'.$id;
+    public function articles ($id) {
+        echo "Halaman Artikel Dengan Id".$id;
     }
 }
