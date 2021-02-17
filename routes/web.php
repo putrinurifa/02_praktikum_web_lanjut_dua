@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\HpmeController;
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HpmeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'about']); 
-Route::get('/articles/{$id}', [ArticlesController::class, 'articles']); 
+Route::get('/articles/{id}', [ArticleController::class, 'articles']); 
